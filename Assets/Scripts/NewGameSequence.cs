@@ -10,8 +10,6 @@ public class NewGameSequence : MonoBehaviour {
     public GameObject loadScreen;
     public NightTextFade nightTextFade;
 
-
-
     public void OnNewGameClicked(int night) {
         lightBlink.enabled = false;
         spriteFade.StartFade();

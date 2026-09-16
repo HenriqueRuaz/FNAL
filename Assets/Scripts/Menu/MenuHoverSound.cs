@@ -1,13 +1,13 @@
-    using UnityEngine;
+using UnityEngine;
 using UnityEngine.Audio;
 
-    public class MenuHoverSound : MonoBehaviour {
-        public AudioSource sfx;
+public class MenuHoverSound : MonoBehaviour {
+    public AudioSource sfx;
 
-        public void PlayHoverSound() {
-            if(!sfx.isPlaying)
-                sfx.Play();
-        }
+    public void PlayHoverSound() {
+        if(!sfx.isPlaying)
+            sfx.Play();
+    }
 
     public void TurnOffAudio() {
         if(sfx != null)
