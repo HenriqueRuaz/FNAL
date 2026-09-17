@@ -105,10 +105,10 @@ TextureImporter:
       name: Unit_01_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3780
-        height: 4082
+        x: 2029
+        y: 60
+        width: 3801
+        height: 7647
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
