@@ -11,15 +11,15 @@ public class OfficeLook : MonoBehaviour {
     public float officeCenterX = 0f;
     public float officeSwayLimit = 2f;
     public float deadZone = 0.1f;
-    public float iconThreshold = 0.3f;
+    public float iconThreshold = 1f;
 
     [Header("Paredes")]
     public float wallLeftX = -19.38f;
     public float wallRightX = 19.38f;
 
     [Header("Velocidade")]
-    public float swaySpeed = 3f;
-    public float jumpSpeed = 8f;
+    public float swaySpeed = 5f;
+    public float jumpSpeed = 25f;
 
     [Header("Cooldown")]
     public float iconCooldownTime = 0.5f;
@@ -36,8 +36,11 @@ public class OfficeLook : MonoBehaviour {
 
     private float targetX;
     private float iconCooldown;
+    private bool canLook;
 
     void Awake() {
+        canLook = false;
+
         targetX = officeCenterX;
 
         Vector3 pos = transform.position;
@@ -46,14 +49,11 @@ public class OfficeLook : MonoBehaviour {
     }
 
     void Update() {
-        iconCooldown -= Time.deltaTime;
+        if(!canLook)
+            return;
 
-        if(state == PanState.Office) {
-            UpdateOffice();
-        } else {
-            UpdateWall();
-        }
-
+        UpdateCooldown();
+        UpdateState();
         MoveCamera();
     }
 
@@ -88,6 +88,17 @@ public class OfficeLook : MonoBehaviour {
         transform.position = pos;
     }
 
+    void UpdateCooldown() {
+        iconCooldown -= Time.deltaTime;
+    }
+
+    void UpdateState() {
+        if(state == PanState.Office)
+            UpdateOffice();
+        else
+            UpdateWall();
+    }
+
     public void GoToOffice() {
         state = PanState.Office;
     }
@@ -100,5 +111,9 @@ public class OfficeLook : MonoBehaviour {
     public void GoToRight() {
         state = PanState.Right;
         iconCooldown = iconCooldownTime;
+    }
+
+    public void EnableLook() {
+        canLook = true;
     }
 }

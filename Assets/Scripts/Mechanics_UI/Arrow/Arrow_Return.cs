@@ -1,6 +1,12 @@
 using UnityEngine;
 
-public class Return_From_Right : MonoBehaviour {
+public class Arrow_Return : MonoBehaviour {
+    public enum Direction {
+        Left,
+        Right
+    }
+
+    public Direction direction;
     public OfficeLook officeLook;
 
     private SpriteRenderer sr;
@@ -12,8 +18,17 @@ public class Return_From_Right : MonoBehaviour {
     }
 
     void Update() {
+        UpdateVisibility();
+    }
+
+    void UpdateVisibility() {
+        bool correctWall =
+            direction == Direction.Left
+            ? officeLook.state == OfficeLook.PanState.Left
+            : officeLook.state == OfficeLook.PanState.Right;
+
         bool shouldShow =
-            officeLook.state == OfficeLook.PanState.Right &&
+            correctWall &&
             officeLook.CanUseReturnIcon;
 
         sr.enabled = shouldShow;

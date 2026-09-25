@@ -1,23 +1,15 @@
 using UnityEngine;
 
 public class DoorController : MonoBehaviour {
-    [Header("Posição quando fechada")]
     public float closedY;
-
-    [Header("Velocidade")]
     public float moveSpeed = 8f;
 
-    // Estado real da porta
     public bool IsClosed {
         get; private set;
     }
-
-    // Estado para o qual a porta está a ir
     public bool TargetClosed {
         get; private set;
     }
-
-    // Está atualmente a mover-se?
     public bool IsMoving {
         get; private set;
     }
@@ -28,13 +20,13 @@ public class DoorController : MonoBehaviour {
     void Awake() {
         openY = transform.position.y;
         targetY = openY;
-
-        IsClosed = false;
-        TargetClosed = false;
-        IsMoving = false;
     }
 
     void Update() {
+        MoveDoor();
+    }
+
+    void MoveDoor() {
         if(!IsMoving)
             return;
 
@@ -48,15 +40,13 @@ public class DoorController : MonoBehaviour {
 
         transform.position = pos;
 
-        if(Mathf.Approximately(pos.y, targetY)) {
-            pos.y = targetY;
-            transform.position = pos;
+        if(Mathf.Approximately(pos.y, targetY))
+            FinishMovement();
+    }
 
-            IsMoving = false;
-
-            // Agora sim, atualizamos o estado real
-            IsClosed = TargetClosed;
-        }
+    void FinishMovement() {
+        IsMoving = false;
+        IsClosed = TargetClosed;
     }
 
     public void ToggleDoor() {
@@ -64,9 +54,7 @@ public class DoorController : MonoBehaviour {
             return;
 
         TargetClosed = !IsClosed;
-
         targetY = TargetClosed ? closedY : openY;
-
         IsMoving = true;
     }
 }
