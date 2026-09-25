@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b683837b545473d48ac8af30ef8656aa
+guid: 3fedb848603bd9c46b86a2ee8afb924a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -105,10 +105,10 @@ TextureImporter:
       name: Arti6_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3780
-        height: 4082
+        x: 1117
+        y: 103
+        width: 5071
+        height: 7610
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
