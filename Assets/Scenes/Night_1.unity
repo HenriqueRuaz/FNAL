@@ -360,11 +360,62 @@ MonoBehaviour:
   m_GameObject: {fileID: 138737521}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 6ae3c8d37f493dc45a984e23b61cf584, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 333e9fb934693bb489ba0db6414e6a2f, type: 3}
+>>>>>>> Stashed changes
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrow_Return
   direction: 1
   officeLook: {fileID: 1441843927}
+--- !u!1 &270850562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270850564}
+  - component: {fileID: 270850563}
+  m_Layer: 0
+  m_Name: NightManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &270850563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270850562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d5e621110999a42a9d6ae3a2bfbbae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NightManager
+  firstStartDelay: 5
+  restartDelay: 2.5
+  officeLook: {fileID: 1441843927}
+--- !u!4 &270850564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270850562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.06624, y: -0.48501, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &285430993
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +689,114 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.55, y: 2.14}
   m_EdgeRadius: 0
+--- !u!1 &904811254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 904811256}
+  - component: {fileID: 904811255}
+  m_Layer: 0
+  m_Name: Global Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &904811255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904811254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.Light2D
+  m_ComponentVersion: 4
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_Light2DProvider:
+    rid: -2
+  m_SelectionSources:
+    rid: 6574552327891189837
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000i
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_LocalBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 6574552327891189837
+      type: {class: Light2DProviderSources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_SelectedHashCode: 4
+        m_SelectedSource:
+          rid: -2
+        m_Provider2DCache:
+          rid: 6574552327891189838
+    - rid: 6574552327891189838
+      type: {class: 'Provider2DCache`1[[UnityEngine.Rendering.Universal.Light2DProvider, Unity.RenderPipelines.Universal.2D.Runtime]]', ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_Cache: []
+--- !u!4 &904811256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904811254}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.06623616, y: 0.16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &939995330
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 939995331}
   m_Layer: 0
-  m_Name: Sheders
+  m_Name: Shaders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -865,12 +1024,66 @@ Transform:
   m_GameObject: {fileID: 1088127499}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 0.003, y: 3.865, z: 0}
+=======
+  m_LocalPosition: {x: -0.021, y: 3.916, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!1 &1108273154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108273155}
+  - component: {fileID: 1108273156}
+  m_Layer: 0
+  m_Name: StartPlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1108273155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108273154}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.06624, y: -0.48501, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1108273156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108273154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f666a3c14df513e4cbf69c8414c23690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StartPlay
+  officeLight: {fileID: 1088127500}
+  startRadius: 1
+  finalRadius: 300
+  globalLight: {fileID: 904811255}
+  finalGlobalIntensity: 0.3
+  lightDuration: 12
 --- !u!1 &1292447114
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +1094,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1292447116}
   - component: {fileID: 1292447115}
-  - component: {fileID: 1292447117}
   m_Layer: 0
   m_Name: Button_Pressed_Right
   m_TagString: Untagged
@@ -964,52 +1176,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2059407836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1292447117
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292447114}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.55, y: 2.14}
-    newSize: {x: 1.55, y: 2.14}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.55, y: 2.14}
-  m_EdgeRadius: 0
 --- !u!1 &1350015552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,7 +1547,7 @@ GameObject:
   - component: {fileID: 1552453579}
   - component: {fileID: 1552453580}
   m_Layer: 0
-  m_Name: Go_Right_Icon
+  m_Name: Right_Icon_Go
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1517,7 +1683,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1552453575}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: bcdf59444a75b924fbec16e8afde9feb, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 9332fd358f04601459547db2054d805a, type: 3}
+>>>>>>> Stashed changes
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrow
   direction: 1
@@ -1532,7 +1702,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1620189829}
   - component: {fileID: 1620189828}
-  - component: {fileID: 1620189830}
   m_Layer: 0
   m_Name: Button_Pressed_Left
   m_TagString: Untagged
@@ -1615,6 +1784,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 285430996}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!61 &1620189830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1769,6 +1939,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1830272695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,7 +2327,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1924636041}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 6ae3c8d37f493dc45a984e23b61cf584, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 333e9fb934693bb489ba0db6414e6a2f, type: 3}
+>>>>>>> Stashed changes
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrow_Return
   direction: 0
@@ -2280,7 +2456,7 @@ GameObject:
   - component: {fileID: 2028728829}
   - component: {fileID: 2028728830}
   m_Layer: 0
-  m_Name: Go_Left_Icon
+  m_Name: Left_Icon_Go
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2416,7 +2592,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2028728825}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: bcdf59444a75b924fbec16e8afde9feb, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 9332fd358f04601459547db2054d805a, type: 3}
+>>>>>>> Stashed changes
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrow
   direction: 0
@@ -2629,9 +2809,18 @@ SceneRoots:
   m_Roots:
   - {fileID: 1441843925}
   - {fileID: 1088127501}
+<<<<<<< Updated upstream
   - {fileID: 1638415045}
   - {fileID: 2045588614}
   - {fileID: 1878420049}
   - {fileID: 939995331}
   - {fileID: 1911264848}
   - {fileID: 2126894282}
+=======
+  - {fileID: 904811256}
+  - {fileID: 2045588614}
+  - {fileID: 1878420049}
+  - {fileID: 939995331}
+  - {fileID: 1108273155}
+  - {fileID: 270850564}
+>>>>>>> Stashed changes

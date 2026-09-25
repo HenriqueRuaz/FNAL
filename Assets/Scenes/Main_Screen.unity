@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ImageFade
   img: {fileID: 980821931}
-  fadeSpeed: 0.5
+  fadeSpeed: 0.2
 --- !u!114 &980821931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1837,7 +1837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NightTextFade
   fadeDuration: 1
-  txt: {fileID: 0}
+  txt: {fileID: 1868410760}
 --- !u!1 &1922105475
 GameObject:
   m_ObjectHideFlags: 0
