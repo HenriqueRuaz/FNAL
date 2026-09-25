@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ImageFade
   img: {fileID: 980821931}
-  fadeSpeed: 0.5
+  fadeSpeed: 0.3
 --- !u!114 &980821931
 MonoBehaviour:
   m_ObjectHideFlags: 0

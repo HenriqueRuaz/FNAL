@@ -11,12 +11,14 @@ public class DoorButton : MonoBehaviour {
     }
 
     void OnMouseDown() {
+        ToggleDoor();
+    }
+
+    void ToggleDoor() {
         if(door.IsMoving)
             return;
 
         door.ToggleDoor();
-
-        // Muda imediatamente
         UpdateSprites();
     }
 
